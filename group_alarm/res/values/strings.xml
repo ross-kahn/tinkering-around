@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Groupalarm</string>
+    <string name="login_title">Login Screen</string><string name="username">Username</string>
+    
+    <string name="login">Login</string><string name="password">Password</string>
+    
+
+</resources>

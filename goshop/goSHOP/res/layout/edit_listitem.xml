@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1" 
+    android:orientation="vertical">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+        
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:id="@+id/edit_listitem_title"
+        android:text="@string/btext_addCategory"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:typeface="serif" />
+
+    </LinearLayout>
+    
+ 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="25"
+        android:layout_marginTop="10dp">
+
+        <TextView 
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/label_listItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_categoryName"
+       		android:layout_centerHorizontal="true"/>
+        
+        <AutoCompleteTextView
+            android:id="@+id/editText_listItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/label_listItemName" />
+
+    </RelativeLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="45"
+	    android:orientation="vertical">
+	    
+	    <TextView
+	        android:id="@+id/label_chooseColor"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/text_chooseColor"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	    <Spinner
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/color_selector"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:entries="@array/valid_colors" >
+	    
+	    </Spinner>
+	    
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1">
+	    
+	    <Button xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/button_addCategory"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/text_save"
+	        android:background="@color/color_addButton"
+	        android:onClick="addListItem">
+	       
+	    </Button>
+	    
+	</LinearLayout>
+
+
+
+
+</LinearLayout>

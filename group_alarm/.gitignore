@@ -1,0 +1,8 @@
+###Binary Files###
+bin/GroupAlarm.apk
+bin/classes.dex
+bin/dexedLibs/
+bin/jarlist.cache
+bin/res/
+bin/resources.ap_
+*.class

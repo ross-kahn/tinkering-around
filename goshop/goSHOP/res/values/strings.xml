@@ -1,0 +1,52 @@
+<resources>
+
+    <string name="app_name">goSHOP</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_go_shop">goSHOP</string>
+    
+    
+    <string name="text_hintAddQuickItem">Type item name here</string>
+    <string name="text_addQuickItem">+Add</string>
+    <string name="text_emptyItemName">&lt;NO_NAME&gt;</string>
+    <string name="text_removeCategory">Remove Category</string>
+    
+    <string name="btext_addCategory"><b><u>Add Category</u></b></string>
+    <string name="text_addCategory">Add Category</string>
+    
+    <string name="text_chooseColor">Choose Color:</string>
+    <string name="btext_chooseColor"><b>Choose Color:</b></string>
+    
+    <string name="text_editCategory">Edit Category</string>
+    <string name="btext_editCategory"><b><u>Edit Category</u></b></string>
+    
+    <string name="text_editItem">Edit Item</string>
+    <string name="btext_editItem"><b><u>Edit Item</u></b></string>
+    
+    <string name="text_categoryName">Category Name</string>
+    <string name="text_itemName">Item Name</string>
+    <string name="text_clearList">Clear List</string>
+    <string name="text_clearChecked">Clear Checked Items</string>
+    <string name="text_categoryManager">Category Manager</string>
+    
+    <string-array name="valid_colors">
+        <item>#1515da</item>
+        <item>#bb0c29</item>
+        <item>#15da1a</item>
+        <item>#6415da</item>
+        <item>#ee26c6</item>
+        <item>#269cee</item>
+        <item>#ee7626</item>
+        <item>#87878c</item>
+        <item>#000001</item>
+    </string-array>
+
+    <string-array name="category_array">
+        <item>Meat</item>
+        <item>Dairy</item>
+        <item>Kitchen Supplies</item>
+        <item>Frozen Food</item>
+    </string-array>
+    <string name="text_save">Save</string>
+    
+</resources>

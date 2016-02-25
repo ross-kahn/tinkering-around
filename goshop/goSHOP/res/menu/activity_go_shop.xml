@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addCategory1" android:orderInCategory="98" 
+        android:title="@string/text_addCategory">
+        
+    </item>
+    
+    <item android:id="@+id/categoryManager" android:orderInCategory="99"
+        android:title="@string/text_categoryManager">
+        
+    </item>
+    
+    <item android:id="@+id/clearChecked" android:title="@string/text_clearChecked" android:orderInCategory="100"> </item>
+    
+    <item android:id="@+id/clearList" android:title="@string/text_clearList" android:orderInCategory="101">
+        
+    </item>
+    
+    <item android:id="@+id/menu_settings"
+        android:title="@string/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" >
+    </item>
+    
+    
+
+</menu>

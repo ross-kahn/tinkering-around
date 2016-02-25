@@ -1,0 +1,94 @@
+/*
+ * Sifteo SDK Example.
+ */
+
+#include <sifteo.h>
+#include "assets.gen.h"
+#include "include/logic/beastFactory.h"
+#include "include/logic/cardFactory.h"
+#include "include/logic/beast.h"
+#include "include/logic/card.h"
+#include "include/logic/player.h"
+#include "include/logic/game.h"
+#include "include/logic/utilities.h"
+
+using namespace Sifteo;
+
+const static int numCubes = 1;
+
+static Metadata M = Metadata()
+    .title("Beastmaker")
+    .package("beastmaker", "0.1")
+    .icon(Icon)
+    .cubeRange(numCubes);
+
+
+void main()
+{
+    Game g = Game();
+    
+    for(int i =0; i < 2; ++i)
+    {
+        LOG("###---Player %i---\n", i);
+
+        CardList c = (CardFactory::getCards(5));  
+
+        for(int i = 0; i < c.count(); i++)
+        {
+            LOG("###%i %i\n", c[i].type, c[i].power);
+        }
+         
+        Card beastCards[] = {c.pop_back(), c.pop_back()};
+        Beast m = BeastFactory::createBeast(beastCards, 2);
+
+        LOG("###Player %i beast\nAttack:%i\nHealth:%i\nResolve:%i\nAnger:%i\n\n",
+                i, m.attack, m.health, m.resolve, m.anger);
+
+        BeastList beasts;
+        beasts.push_back(m); 
+        LOG("###Adding Player\n");
+        g.players.push_back( Player(c, beasts) );
+        LOG("###Done Adding Player\n");
+
+        for(int p= 0; p < g.players.count(); p++)
+        {
+            LOG("###Player %i with {%i, %i, %i}\n", p, 
+                    g.players[p].beasts[0].attack,
+                    g.players[p].beasts[0].health,
+                    g.players[p].beasts[0].resolve);    
+        } 
+    }
+    
+     
+    LOG("\n%i players...\n", g.players.count());
+    LOG("Prepare to battle!\n\n");   
+    int turn = 0;
+    int other = 1;
+    while(g.whoWon() < 0)
+    {
+        LOG("Player %i going against Player %i\n", turn, other);
+        Beast* attacker = &(g.players[turn].beasts[0]);
+        Beast* defender = &(g.players[other].beasts[0]);
+
+        LOG("Clash! Beast %i attacks beast %i!\n", turn, other);
+       
+        g.beastClash(attacker, defender);
+        
+        LOG("Beast %i attacks beast %i for %i damage, leaving %i health!\n", 
+                turn,
+                other,
+                attacker->attack,
+                defender->health);
+        
+        LOG("Beast %i defends against beast %i for %i damage, leaving %i health!\n", 
+                other,
+                turn,
+                defender->attack,
+                attacker->health);
+                
+        turn = other;
+        other = other == 0 ? 1 : 0;
+    } 
+    LOG("\nBattle over!\n");
+    LOG("##Player %i won!\n\n\n", g.whoWon());
+}

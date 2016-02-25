@@ -1,0 +1,6 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light" />
+    <color name="color_addButton">#33aa35</color>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+    
+	
+	<CheckBox 
+	    android:id="@+id/item_checkbox"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:onClick="toggleCheckbox"/>
+	    
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+	    
+		<TextView
+		    android:id="@+id/item_name"
+		    android:text="@string/text_emptyItemName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+		
+		<View 
+		    android:id="@+id/category_border"
+		    android:layout_width="fill_parent"
+		    android:layout_height="1dp"/>
+		
+	</LinearLayout>
+	
+   <Button
+       android:id="@+id/item_delete_button"
+       android:layout_width="33dp"
+       android:layout_height="36dp"
+       android:background="@drawable/ic_menu_delete"
+       android:onClick="removeQuickItem" />
+    
+</LinearLayout>

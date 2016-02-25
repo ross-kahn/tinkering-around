@@ -1,0 +1,12 @@
+c:\users\rkahn\desktop\documents\visual studio 2013\Projects\JustCodingThings\JustCodingThings\bin\Debug\JustCodingThings.exe.config
+c:\users\rkahn\desktop\documents\visual studio 2013\Projects\JustCodingThings\JustCodingThings\bin\Debug\JustCodingThings.exe
+c:\users\rkahn\desktop\documents\visual studio 2013\Projects\JustCodingThings\JustCodingThings\bin\Debug\JustCodingThings.pdb
+c:\users\rkahn\desktop\documents\visual studio 2013\Projects\JustCodingThings\JustCodingThings\obj\Debug\JustCodingThings.csprojResolveAssemblyReference.cache
+c:\users\rkahn\desktop\documents\visual studio 2013\Projects\JustCodingThings\JustCodingThings\obj\Debug\JustCodingThings.exe
+c:\users\rkahn\desktop\documents\visual studio 2013\Projects\JustCodingThings\JustCodingThings\obj\Debug\JustCodingThings.pdb
+C:\Users\Ross\Documents\GitHub\JustCodingThings\JustCodingThings\bin\Debug\JustCodingThings.exe.config
+C:\Users\Ross\Documents\GitHub\JustCodingThings\JustCodingThings\obj\Debug\JustCodingThings.exe
+C:\Users\Ross\Documents\GitHub\JustCodingThings\JustCodingThings\obj\Debug\JustCodingThings.pdb
+C:\Users\Ross\Documents\GitHub\JustCodingThings\JustCodingThings\bin\Debug\JustCodingThings.exe
+C:\Users\Ross\Documents\GitHub\JustCodingThings\JustCodingThings\bin\Debug\JustCodingThings.pdb
+C:\Users\Ross\Documents\GitHub\JustCodingThings\JustCodingThings\obj\Debug\JustCodingThings.csprojResolveAssemblyReference.cache
